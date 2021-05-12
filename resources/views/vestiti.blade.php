@@ -7,7 +7,6 @@
 
 @section('content')
     <h1>Vestiti</h1>
-    <h2>{{$message}}</h2>
     <div class="dresses-container">
         @foreach ($dresses as $dress)
             <div class="dress-card">

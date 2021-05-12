@@ -15,7 +15,6 @@ class MainController extends Controller
     public function vestiti() {
         $dresses = Dress::all();
         $data = [
-            'message' => 'ecco i vestiti',
             'dresses' => $dresses
         ];
         return view('vestiti',$data);

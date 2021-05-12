@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+main h1 {
+  margin: calc(10px * 4);
+}
+
+header {
+  background-color: whitesmoke;
+}
+
+header h2 {
+  padding: calc(10px * 4);
+}
+
+header h2,
+header h3 {
+  display: inline-block;
+}
+
+header a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #dd6f15;
+}
+
 .dresses-container {
   display: flex;
   justify-content: center;
@@ -31,5 +54,10 @@
 
 .dress-card h3 {
   text-transform: uppercase;
+}
+
+footer {
+  padding: calc(10px * 4);
+  background-color: whitesmoke;
 }
 
