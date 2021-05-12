@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dresses-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.dress-card {
+  margin: 10px;
+  width: calc((100% / 3) - ((3 + 1) * 10px));
+  background-color: whitesmoke;
+}
+
+.dress-card * {
+  margin-bottom: 10px;
+}
+
+.dress-card img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.dress-card h3 {
+  text-transform: uppercase;
+}
+
