@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Dress;
 
 class MainController extends Controller
 {
@@ -12,6 +13,11 @@ class MainController extends Controller
     }
 
     public function vestiti() {
-        return view('vestiti');
+        $dresses = Dress::all();
+        $data = [
+            'message' => 'ecco i vestiti',
+            'dresses' => $dresses
+        ];
+        return view('vestiti',$data);
     }
 }
